@@ -22,12 +22,13 @@ slothy = Slothy(AArch64_Neon, Target_V2)
 slothy.load_source_from_file(src)
 
 # --- 求解設定 ---
-slothy.config.variable_size = True   # 讓 SLOTHY 自己找最小 cycle 數
-slothy.config.timeout = 300          # 秒；大 kernel 要調高
+slothy.config.variable_size = True  # 讓 SLOTHY 自己找最小 cycle 數
+slothy.config.timeout = 300  # 秒；大 kernel 要調高
 
 # --- EOR3 fusion ---
 # V2 上 EOR3 走 V0 (tput 1)，普通 EOR 走 V (tput 4)，融合是淨虧損。
 from slothy.targets.aarch64.aarch64_neon import veor
+
 veor.global_fusion_cb = lambda inst, t, log=None: False
 
 # --- 上游 bug workaround ---
