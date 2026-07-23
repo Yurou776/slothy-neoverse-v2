@@ -77,9 +77,7 @@ class ntt_kyber_123_4567(OptimizationRunner):
 
 
 class intt_kyber_123_4567(OptimizationRunner):
-    def __init__(
-        self, var="", arch=AArch64_Neon, target=Target_N1, timeout=None
-    ):
+    def __init__(self, var="", arch=AArch64_Neon, target=Target_N1, timeout=None):
         name = "intt_kyber_123_4567"
         infile = name
 
