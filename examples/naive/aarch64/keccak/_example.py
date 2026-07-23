@@ -31,6 +31,7 @@ from common.OptimizationRunner import OptimizationRunner
 import slothy.targets.aarch64.aarch64_neon as AArch64_Neon
 import slothy.targets.aarch64.neoverse_n1_experimental as Target_N1
 import slothy.targets.aarch64.cortex_a55 as Target_CortexA55
+
 SUBFOLDER = os.path.basename(os.path.dirname(__file__)) + "/"
 
 
