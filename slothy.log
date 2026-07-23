@@ -1,0 +1,107 @@
+nohup: ignoring input
+* Example: ntt_dilithium_m7...
+INFO:ntt_dilithium_m7.layer78_loop:SLOTHY version: unknown
+INFO:ntt_dilithium_m7:Optimizing loop layer78_loop (33 instructions) ...
+INFO:ntt_dilithium_m7.layer78_loop.slothy:Perform internal binary search for minimal number of stalls...
+INFO:ntt_dilithium_m7.layer78_loop.slothy:Attempt optimization with max 16 stalls...
+INFO:ntt_dilithium_m7.layer78_loop.slothy:Force 30:'str r5, [r0], #16' (type str_with_postinc) < 31:'cmp.w r0, r4' (type cmp) by source annotation
+INFO:ntt_dilithium_m7.layer78_loop.slothy:Objective: minimize cycles
+INFO:ntt_dilithium_m7.layer78_loop.slothy:Invoking external constraint solver (OR-Tools CP-SAT v9.15.6755) ...
+INFO:ntt_dilithium_m7.layer78_loop.slothy:[9.4671s]: Found 1 solutions so far... objective (minimize cycles): currently  (Cycles ~ 25.0, IPC ~ 1.32), bound  (Cycles ~ 17.0, IPC ~ 1.94)
+INFO:ntt_dilithium_m7.layer78_loop.slothy:[9.5098s]: Found 2 solutions so far... objective (minimize cycles): currently  (Cycles ~ 24.0, IPC ~ 1.38), bound  (Cycles ~ 17.0, IPC ~ 1.94)
+INFO:ntt_dilithium_m7.layer78_loop.slothy:[9.5243s]: Found 3 solutions so far... objective (minimize cycles): currently  (Cycles ~ 23.0, IPC ~ 1.43), bound  (Cycles ~ 17.0, IPC ~ 1.94)
+INFO:ntt_dilithium_m7.layer78_loop.slothy:[9.5399s]: Found 4 solutions so far... objective (minimize cycles): currently  (Cycles ~ 22.0, IPC ~ 1.50), bound  (Cycles ~ 17.0, IPC ~ 1.94)
+INFO:ntt_dilithium_m7.layer78_loop.slothy:[9.5638s]: Found 5 solutions so far... objective (minimize cycles): currently  (Cycles ~ 21.0, IPC ~ 1.57), bound  (Cycles ~ 17.0, IPC ~ 1.94)
+INFO:ntt_dilithium_m7.layer78_loop.slothy:[9.5786s]: Found 6 solutions so far... objective (minimize cycles): currently  (Cycles ~ 19.0, IPC ~ 1.74), bound  (Cycles ~ 17.0, IPC ~ 1.94)
+INFO:ntt_dilithium_m7.layer78_loop.slothy:[9.6389s]: Found 7 solutions so far... objective (minimize cycles): currently  (Cycles ~ 18.0, IPC ~ 1.83), bound  (Cycles ~ 17.0, IPC ~ 1.94)
+INFO:ntt_dilithium_m7.layer78_loop.slothy:[10.1187s]: Found 8 solutions so far... objective (minimize cycles): currently  (Cycles ~ 17.0, IPC ~ 1.94), bound  (Cycles ~ 17.0, IPC ~ 1.94)
+INFO:ntt_dilithium_m7.layer78_loop.slothy:Closer than 0 stalls to theoretical optimum... stop
+INFO:ntt_dilithium_m7.layer78_loop.slothy:OPTIMAL, wall time: 10.122585 s
+INFO:ntt_dilithium_m7.layer78_loop.slothy:Booleans in result: 12095
+INFO:ntt_dilithium_m7.layer78_loop.slothy:Number of early instructions: 21
+INFO:ntt_dilithium_m7.layer78_loop.slothy.selfcheck:OK!
+WARNING:ntt_dilithium_m7:LLVM (llvm-mc, llvm-nm, llvm-readobj) not found, disabling selftest. Consider installing LLVM.
+INFO:ntt_dilithium_m7.layer78_loop.slothy:Minimum number of stalls: 0
+INFO:ntt_dilithium_m7.layer78_loop.preamble.slothy:Perform internal binary search for minimal number of stalls...
+INFO:ntt_dilithium_m7.layer78_loop.preamble.slothy:Attempt optimization with max 16 stalls...
+INFO:ntt_dilithium_m7.layer78_loop.preamble.slothy:Objective: minimize cycles
+INFO:ntt_dilithium_m7.layer78_loop.preamble.slothy:Invoking external constraint solver (OR-Tools CP-SAT v9.15.6755) ...
+INFO:ntt_dilithium_m7.layer78_loop.preamble.slothy:[0.3753s]: Found 1 solutions so far... objective (minimize cycles): currently  (Cycles ~ 27.0, IPC ~ 0.78), bound  (Cycles ~ 14.0, IPC ~ 1.50)
+INFO:ntt_dilithium_m7.layer78_loop.preamble.slothy:[0.3792s]: Found 2 solutions so far... objective (minimize cycles): currently  (Cycles ~ 16.0, IPC ~ 1.31), bound  (Cycles ~ 14.0, IPC ~ 1.50)
+INFO:ntt_dilithium_m7.layer78_loop.preamble.slothy:[0.3818s]: Found 3 solutions so far... objective (minimize cycles): currently  (Cycles ~ 14.0, IPC ~ 1.50), bound  (Cycles ~ 14.0, IPC ~ 1.50)
+INFO:ntt_dilithium_m7.layer78_loop.preamble.slothy:Closer than 0 stalls to theoretical optimum... stop
+INFO:ntt_dilithium_m7.layer78_loop.preamble.slothy:OPTIMAL, wall time: 0.382209 s
+INFO:ntt_dilithium_m7.layer78_loop.preamble.slothy:Booleans in result: 718
+INFO:ntt_dilithium_m7.layer78_loop.preamble.slothy.selfcheck:OK!
+WARNING:ntt_dilithium_m7:LLVM (llvm-mc, llvm-nm, llvm-readobj) not found, disabling selftest. Consider installing LLVM.
+INFO:ntt_dilithium_m7.layer78_loop.preamble.slothy:Minimum number of stalls: 3
+INFO:ntt_dilithium_m7.layer78_loop.postamble.slothy:Perform internal binary search for minimal number of stalls...
+INFO:ntt_dilithium_m7.layer78_loop.postamble.slothy:Attempt optimization with max 16 stalls...
+INFO:ntt_dilithium_m7.layer78_loop.postamble.slothy:Force 6:'str r14, [r0], #16' (type str_with_postinc) < 8:'cmp.w r0, r4' (type cmp) by source annotation
+INFO:ntt_dilithium_m7.layer78_loop.postamble.slothy:Objective: minimize cycles
+INFO:ntt_dilithium_m7.layer78_loop.postamble.slothy:Invoking external constraint solver (OR-Tools CP-SAT v9.15.6755) ...
+INFO:ntt_dilithium_m7.layer78_loop.postamble.slothy:[0.0628s]: Found 1 solutions so far... objective (minimize cycles): currently  (Cycles ~ 9.0, IPC ~ 1.33), bound  (Cycles ~ 6.0, IPC ~ 2.00)
+INFO:ntt_dilithium_m7.layer78_loop.postamble.slothy:[0.0680s]: Found 2 solutions so far... objective (minimize cycles): currently  (Cycles ~ 7.0, IPC ~ 1.71), bound  (Cycles ~ 6.0, IPC ~ 2.00)
+INFO:ntt_dilithium_m7.layer78_loop.postamble.slothy:OPTIMAL, wall time: 0.068383 s
+INFO:ntt_dilithium_m7.layer78_loop.postamble.slothy:Booleans in result: 261
+INFO:ntt_dilithium_m7.layer78_loop.postamble.slothy.selfcheck:OK!
+WARNING:ntt_dilithium_m7:LLVM (llvm-mc, llvm-nm, llvm-readobj) not found, disabling selftest. Consider installing LLVM.
+INFO:ntt_dilithium_m7.layer78_loop.postamble.slothy:Minimum number of stalls: 1
+* Example: intt_dilithium_123_456_78_m7...
+INFO:intt_dilithium_123_456_78_m7.layer123_loop:SLOTHY version: unknown
+INFO:intt_dilithium_123_456_78_m7:Optimizing loop layer123_loop (58 instructions) ...
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:Perform internal binary search for minimal number of stalls...
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:Attempt optimization with max 16 stalls...
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:Force 54:'str.w r5, [r0], #32' (type str_with_postinc) < 56:'cmp.w r0, r10' (type cmp) by source annotation
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:Objective: minimize cycles
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:Invoking external constraint solver (OR-Tools CP-SAT v9.15.6755) ...
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[40.3854s]: Found 1 solutions so far... objective (minimize cycles): currently  (Cycles ~ 45.0, IPC ~ 1.29), bound  (Cycles ~ 29.0, IPC ~ 2.00)
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[40.4346s]: Found 2 solutions so far... objective (minimize cycles): currently  (Cycles ~ 44.0, IPC ~ 1.32), bound  (Cycles ~ 29.0, IPC ~ 2.00)
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[40.4859s]: Found 3 solutions so far... objective (minimize cycles): currently  (Cycles ~ 42.0, IPC ~ 1.38), bound  (Cycles ~ 29.0, IPC ~ 2.00)
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[40.5421s]: Found 4 solutions so far... objective (minimize cycles): currently  (Cycles ~ 41.0, IPC ~ 1.41), bound  (Cycles ~ 29.0, IPC ~ 2.00)
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[40.5949s]: Found 5 solutions so far... objective (minimize cycles): currently  (Cycles ~ 40.0, IPC ~ 1.45), bound  (Cycles ~ 29.0, IPC ~ 2.00)
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[41.0013s]: Found 6 solutions so far... objective (minimize cycles): currently  (Cycles ~ 39.0, IPC ~ 1.49), bound  (Cycles ~ 29.0, IPC ~ 2.00)
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[41.0819s]: Found 7 solutions so far... objective (minimize cycles): currently  (Cycles ~ 38.0, IPC ~ 1.53), bound  (Cycles ~ 29.0, IPC ~ 2.00)
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[41.1449s]: Found 8 solutions so far... objective (minimize cycles): currently  (Cycles ~ 37.0, IPC ~ 1.57), bound  (Cycles ~ 29.0, IPC ~ 2.00)
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[41.2130s]: Found 9 solutions so far... objective (minimize cycles): currently  (Cycles ~ 36.0, IPC ~ 1.61), bound  (Cycles ~ 29.0, IPC ~ 2.00)
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[41.2614s]: Found 10 solutions so far... objective (minimize cycles): currently  (Cycles ~ 35.0, IPC ~ 1.66), bound  (Cycles ~ 29.0, IPC ~ 2.00)
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[41.3999s]: Found 11 solutions so far... objective (minimize cycles): currently  (Cycles ~ 34.0, IPC ~ 1.71), bound  (Cycles ~ 29.0, IPC ~ 2.00)
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[41.7100s]: Found 12 solutions so far... objective (minimize cycles): currently  (Cycles ~ 33.0, IPC ~ 1.76), bound  (Cycles ~ 29.0, IPC ~ 2.00)
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[42.0297s]: Found 13 solutions so far... objective (minimize cycles): currently  (Cycles ~ 32.0, IPC ~ 1.81), bound  (Cycles ~ 29.0, IPC ~ 2.00)
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[42.3560s]: Found 14 solutions so far... objective (minimize cycles): currently  (Cycles ~ 31.0, IPC ~ 1.87), bound  (Cycles ~ 29.0, IPC ~ 2.00)
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[402.1398s]: Found 15 solutions so far... objective (minimize cycles): currently  (Cycles ~ 30.0, IPC ~ 1.93), bound  (Cycles ~ 29.0, IPC ~ 2.00)
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[1867.0287s]: Found 16 solutions so far... objective (minimize cycles): currently  (Cycles ~ 29.0, IPC ~ 2.00), bound  (Cycles ~ 29.0, IPC ~ 2.00)
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:Closer than 0 stalls to theoretical optimum... stop
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:OPTIMAL, wall time: 1867.065702 s
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:Booleans in result: 36107
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:Number of early instructions: 53
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy.selfcheck:OK!
+WARNING:intt_dilithium_123_456_78_m7:LLVM (llvm-mc, llvm-nm, llvm-readobj) not found, disabling selftest. Consider installing LLVM.
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:Minimum number of stalls: 0
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:Optimize again with minimal number of 0 stalls, with objective...
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:Objective: minimize iteration overlapping
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:Invoking external constraint solver...
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[5.4504s]: Found 1 solutions so far... objective (minimize iteration overlapping): currently 53.0, bound 0.0
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[138.6026s]: Found 2 solutions so far... objective (minimize iteration overlapping): currently 36.0, bound 0.0
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[170.7427s]: Found 3 solutions so far... objective (minimize iteration overlapping): currently 35.0, bound 0.0
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[355.6500s]: Found 4 solutions so far... objective (minimize iteration overlapping): currently 34.0, bound 0.0
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[469.9334s]: Found 5 solutions so far... objective (minimize iteration overlapping): currently 33.0, bound 0.0
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[519.3875s]: Found 6 solutions so far... objective (minimize iteration overlapping): currently 32.0, bound 0.0
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[781.9124s]: Found 7 solutions so far... objective (minimize iteration overlapping): currently 31.0, bound 0.0
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[790.9489s]: Found 8 solutions so far... objective (minimize iteration overlapping): currently 30.0, bound 0.0
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[1094.6277s]: Found 9 solutions so far... objective (minimize iteration overlapping): currently 29.0, bound 0.0
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[1106.2124s]: Found 10 solutions so far... objective (minimize iteration overlapping): currently 28.0, bound 0.0
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[1106.3998s]: Found 11 solutions so far... objective (minimize iteration overlapping): currently 27.0, bound 0.0
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[1222.5341s]: Found 12 solutions so far... objective (minimize iteration overlapping): currently 26.0, bound 0.0
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[1268.9635s]: Found 13 solutions so far... objective (minimize iteration overlapping): currently 25.0, bound 0.0
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[1273.3184s]: Found 14 solutions so far... objective (minimize iteration overlapping): currently 24.0, bound 0.0
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[1277.0209s]: Found 15 solutions so far... objective (minimize iteration overlapping): currently 23.0, bound 0.0
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[1280.0149s]: Found 16 solutions so far... objective (minimize iteration overlapping): currently 22.0, bound 0.0
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[1280.8278s]: Found 17 solutions so far... objective (minimize iteration overlapping): currently 21.0, bound 0.0
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[1305.1744s]: Found 18 solutions so far... objective (minimize iteration overlapping): currently 20.0, bound 0.0
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[1407.7453s]: Found 19 solutions so far... objective (minimize iteration overlapping): currently 19.0, bound 0.0
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[1414.7858s]: Found 20 solutions so far... objective (minimize iteration overlapping): currently 18.0, bound 0.0
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[1439.8802s]: Found 21 solutions so far... objective (minimize iteration overlapping): currently 17.0, bound 0.0
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[1489.5559s]: Found 22 solutions so far... objective (minimize iteration overlapping): currently 16.0, bound 0.0
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[1489.9244s]: Found 23 solutions so far... objective (minimize iteration overlapping): currently 15.0, bound 0.0
+INFO:intt_dilithium_123_456_78_m7.layer123_loop.slothy:[1514.5419s]: Found 24 solutions so far... objective (minimize iteration overlapping): currently 14.0, bound 0.0

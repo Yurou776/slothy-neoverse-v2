@@ -30,6 +30,7 @@ import os
 from common.OptimizationRunner import OptimizationRunner
 import slothy.targets.aarch64.aarch64_neon as AArch64_Neon
 import slothy.targets.aarch64.cortex_a55 as Target_CortexA55
+import slothy.targets.aarch64.neoverse_v2 as Target_N1
 import slothy.targets.aarch64.cortex_a72_frontend as Target_CortexA72
 import slothy.targets.aarch64.apple_m1_firestorm_experimental as Target_AppleM1_firestorm
 import slothy.targets.aarch64.apple_m1_icestorm_experimental as Target_AppleM1_icestorm
@@ -77,7 +78,7 @@ class ntt_kyber_123_4567(OptimizationRunner):
 
 class intt_kyber_123_4567(OptimizationRunner):
     def __init__(
-        self, var="", arch=AArch64_Neon, target=Target_CortexA55, timeout=None
+        self, var="", arch=AArch64_Neon, target=Target_N1, timeout=None
     ):
         name = "intt_kyber_123_4567"
         infile = name

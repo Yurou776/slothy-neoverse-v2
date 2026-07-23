@@ -29,14 +29,14 @@ import os
 
 from common.OptimizationRunner import OptimizationRunner
 import slothy.targets.aarch64.aarch64_neon as AArch64_Neon
+import slothy.targets.aarch64.neoverse_n1_experimental as Target_N1
 import slothy.targets.aarch64.cortex_a55 as Target_CortexA55
-
 SUBFOLDER = os.path.basename(os.path.dirname(__file__)) + "/"
 
 
 class neon_keccak_x1_no_symbolic(OptimizationRunner):
-    def __init__(self, var="", arch=AArch64_Neon, target=Target_CortexA55):
-        name = "keccak_f1600_x1_scalar_slothy_no_symbolic"
+    def __init__(self, var="", arch=AArch64_Neon, target=Target_N1):
+        name = "keccak_f1600_x1_scalar_slothy_no_symbolic_neoverse_n1"
         infile = "keccak_f1600_x1_scalar_slothy"
         outfile = "examples/naive/aarch64/keccak/keccak_f1600_x1_scalar_no_symbolic.s"
         super().__init__(
@@ -56,7 +56,7 @@ class neon_keccak_x1_no_symbolic(OptimizationRunner):
         slothy.config.inputs_are_outputs = True
         slothy.config.variable_size = True
         slothy.config.visualize_expected_performance = False
-        slothy.config.timeout = 10800
+        slothy.config.timeout = 60
 
         slothy.config.selfcheck_failure_logfile = "selfcheck_fail.log"
 
