@@ -197,3 +197,52 @@ solving](https://eprint.iacr.org/2022/1303).
 
 For information on how to contribute to SLOTHY, please see
 [`CONTRIBUTING.md`](./CONTRIBUTING.md).
+
+
+
+
+# files 資料夾說明
+
+本資料夾提供 SLOTHY 的最佳化測試腳本，用於將組合語言程式輸入 SLOTHY，並使用不同的目標微架構（Target）進行最佳化。
+
+---
+
+## 檔案說明
+
+### optimize.py
+
+使用 **Neoverse N1** Target 對輸入的組合語言程式進行最佳化。
+
+### optimize_v2.py
+
+使用自行建立的 **Neoverse V2 Target** 進行最佳化。
+
+## 使用方式
+
+例如：
+
+```bash
+python3 optimize.py test.s
+```
+
+---
+
+### Neoverse V2
+
+例如：
+
+```bash
+python3 optimize_v2.py test.s
+```
+test.s在files裡面
+---
+
+## 測試流程
+
+1. 準備欲最佳化的組合語言 (.s)。
+2. 使用 optimize.py 或 optimize_v2.py 執行最佳化。
+3. 產生最佳化後的組合語言。
+4. 編譯並執行最佳化後程式。
+5. 比較最佳化前後效能與指令排程結果。
+
+---
