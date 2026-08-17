@@ -1451,6 +1451,35 @@ class SVEInstruction(AArch64Instruction):
     pass
 
 
+# ---- SVE zip/unzip ----
+class SVEPermute(SVEInstruction):
+    pass
+
+
+class sve_uzp1(SVEPermute):
+    pattern = "uzp1 <Zd>.<dt>, <Za>.<dt>, <Zb>.<dt>"
+    inputs = ["Za", "Zb"]
+    outputs = ["Zd"]
+
+
+class sve_uzp2(SVEPermute):
+    pattern = "uzp2 <Zd>.<dt>, <Za>.<dt>, <Zb>.<dt>"
+    inputs = ["Za", "Zb"]
+    outputs = ["Zd"]
+
+
+class sve_zip1(SVEPermute):
+    pattern = "zip1 <Zd>.<dt>, <Za>.<dt>, <Zb>.<dt>"
+    inputs = ["Za", "Zb"]
+    outputs = ["Zd"]
+
+
+class sve_zip2(SVEPermute):
+    pattern = "zip2 <Zd>.<dt>, <Za>.<dt>, <Zb>.<dt>"
+    inputs = ["Za", "Zb"]
+    outputs = ["Zd"]
+
+
 class SVEVectorLoad(SVEInstruction):
     pass
 

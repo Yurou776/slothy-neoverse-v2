@@ -248,6 +248,7 @@ from slothy.targets.aarch64.aarch64_sve import (
     sve_st1h_mulvl,
     SVELd4,
     SVESt4,
+    SVEPermute,
 )
 
 # Section 4.1: the dispatch stage can process up to 8 MOPs per cycle.
@@ -694,6 +695,7 @@ execution_units = {
     (sve_dup_w, sve_dup_x): ExecutionUnit.M0(),  # "Duplicate, scalar form"
     sve_movprfx: ExecutionUnit.V01(),  # "Move prefix"
     (sve_add, sve_sub): ExecutionUnit.V01(),  # "Arithmetic, basic"
+    SVEPermute: ExecutionUnit.V01(),
     _sve_mul_narrow: ExecutionUnit.V0(),  # MUL/SMULH, B/H/S element -> V0
     _sve_mul_wide: ExecutionUnit.V0(),  # MUL/SMULH, D element -> V0
     # =====================================================================
@@ -818,6 +820,7 @@ inverse_throughput = {
     (sve_dup_w, sve_dup_x): 1,  # M0, tput 1
     sve_movprfx: 1,  # V01, tput 2
     (sve_add, sve_sub): 1,  # V01, tput 2
+    SVEPermute: 1,
     _sve_mul_narrow: 1,  # V0, tput 1
     _sve_mul_wide: 2,  # V0, tput 1/2 -> round(1/(1/2))
     (sve_ld1h, sve_ld1h_mulvl, sve_ld1rh): 1,  # L01, tput 2
@@ -925,6 +928,7 @@ default_latencies = {
     (sve_dup_w, sve_dup_x): 3,
     sve_movprfx: 2,
     (sve_add, sve_sub): 2,
+    SVEPermute: 2,
     _sve_mul_narrow: 4,  # B/H/S element
     _sve_mul_wide: 5,  # D element
     (sve_ld1h, sve_ld1h_mulvl, sve_ld1rh): 6,

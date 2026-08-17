@@ -16,6 +16,27 @@ slothy.config.outputs = [
     "z22", "z23", "z24", "z25",
     "x16", "x17",
 ]
+
+slothy.config.locked_registers = {
+    "x0",
+    "x1",
+    "x16",
+    "x17",
+
+    "p0",
+    "p3",
+
+    "z0", "z1", "z2", "z3",
+    "z4", "z7",
+    "z16", "z17",
+    "z18", "z19", "z20", "z21",
+    "z22", "z23", "z24", "z25",
+
+    "z28",
+    "z29",
+    "z30",
+}
+
 slothy.optimize()
 
-slothy.write_source_to_file("phaseA_opt3.s")
+slothy.write_source_to_file("phaseA_opt.s")
